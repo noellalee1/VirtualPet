@@ -3,13 +3,16 @@ void setup(){
 }
 
 void draw(){
-  noStroke();
+  
+  stroke(0);
   
   fill(44, 128, 20); // dark green
   ellipse(350, 270, 110, 80); //head
   
   fill (171, 155, 94); // yellow brown
   bezier(100, 300, 190, 70,  350, 250,  350, 300); //shell
+
+  line(100, 300, 350, 300);
 
   fill(44, 128, 20); // dark green
   rect(100, 300, 60, 40); //left foot
@@ -20,6 +23,9 @@ void draw(){
   fill(0,0,0); //black
   ellipse(380, 270, 15, 30);//eye whites
   
+  noStroke();
   fill(224, 227, 152); //green-yelllow
-  quad(100, 300, 105, 290, 348, 290, 350, 300); //underbelly
+  quad(101, 300, 106, 290, 348, 290, 350, 300); //underbelly
+  
+  
 }
